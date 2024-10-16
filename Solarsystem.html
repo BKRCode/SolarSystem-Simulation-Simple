@@ -69,6 +69,7 @@
             background-image: url('SolarSystem/Earth.png');
             background-size: cover;
             background-position: center;
+            animation: self-rotate 10s linear infinite
         }
         .mond::before {
             top: 0.8em;
@@ -79,12 +80,20 @@
             background-image: url('SolarSystem/Moon.png');
             background-size: cover;
             background-position: center;
+            animation: self-rotate 4s linear infinite
         }
         @keyframes orbit {
             to {
                 transform: rotate(360deg);
             }
         }
+        @keyframes self-rotate{
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+        
     </style>
 </head>
 <body>
